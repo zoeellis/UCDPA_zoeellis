@@ -8,8 +8,15 @@ data = pd.read_csv("/Users/zoeellis/Library/Containers/com.microsoft.Excel/Data/
 data.head()
 print(data)
 
-#Extracting a pattern using regex
-#count the total number of adults across all regions
+#Extracting a pattern using regex- find 0 values
+import re
+pattern = '0'
+test_string = 'abyss'
+result = re.match(pattern, test_string)
+if result:
+  print("Search successful.")
+else:
+  print("Search unsuccessful.")
 
 #Checking to see if there is any missing data
 print(data.isnull().sum())
@@ -23,9 +30,20 @@ print(bool_series)
 
 #Interators
 
+
 #merge Data Frama
+
+#Define a custom function
+
+#Numpy
+
+#List
+
+
 
 #Visualaise with Seabourn 1
 
+
 #Visualaise with Seabourn 2
+
 
